@@ -449,6 +449,10 @@
                                             "Value" : "{RedBull4th}"
                                         }
                                     ]
+                                },
+                                {
+                                    "Condition" : "{Item.DriverSeason.IsReserve}",
+                                    "Value" : "Reserve"
                                 }
                             ]
                         },

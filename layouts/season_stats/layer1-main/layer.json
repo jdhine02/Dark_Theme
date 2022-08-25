@@ -72,7 +72,7 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
-                                "Source" : "   {Item.EventsCount, Converter=NumberZeroToEmpty}   ",                                
+                                "Source" : "   {Season.SeasonCurrentNumberEvent, Converter=NumberZeroToEmpty}   ",                                
                                 "TextOptionsExtern" : "primaryNumber",
                                 "Foreground" : "{DNFText}"
                             }

@@ -74,20 +74,20 @@
                                 "Background": "{BackgroundDefault}",
                                 "Source" : "   {Item.EventsCount, Converter=NumberZeroToEmpty}   ",                                
                                 "TextOptionsExtern" : "primaryNumber",
-                                "Foreground" : "{DNFText}"
+                                //"Foreground" : "{DNFText}"
                             }
                         },
-                        {
-                            "Header" : "Races Entered",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "Source" : "    {Item.RacesCount, Converter=NumberZeroToEmpty}    ",                                
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
+                        //{
+                        //    "Header" : "Races Entered",
+                        //    "MarginLeft" : 0,
+                        //    "Template":{
+                        //        "BlockType" : "text",
+                        //        "Padding": "24, 0",
+                        //        "Background": "{BackgroundDefault}",
+                        //        "Source" : "    {Item.RacesCount, Converter=NumberZeroToEmpty}    ",                                
+                        //        "TextOptionsExtern" : "primaryNumber"
+                        //    }
+                        //},
                         {
                             "Header" : "Qualies",
                             "MarginLeft" : 0,
