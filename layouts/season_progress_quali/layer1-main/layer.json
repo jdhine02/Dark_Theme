@@ -193,57 +193,35 @@
                                      //   ]
                                    // },
                                     {
-                                        "Condition" : "{RenderP1Colors}",
-                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P1Foreground}"
-                                            }
-                                        ]
+                                        "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAND" : "{RenderP1Colors}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{P1Foreground}"
+
                                     },
                                     {
-                                        "Condition" : "{RenderP2Colors}",
-                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=2}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P2Foreground}"
-                                            }
-                                        ]
+                                        "Condition": "{Item.Position, Converter=NumberEquals, Parameter=2}",
+                                        "ConditionAnd": "{RenderP2Colors}",
+                                        "Property": "Foreground",
+                                        "Value": "{P2Foreground}"
                                     },
                                     {
-                                        "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=3}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P3Foreground}"
-                                            }
-                                        ]
+                                        "Condition": "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "ConditionAND": "{RenderP3Colors}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{P3Foreground}"
                                     },
                                     {
-                                        "Condition" : "{RenderDNFText}",
-                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=StringEquals, Parameter=DNF}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{DNFText}"
-                                            }
-                                        ]
+                                        "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                        "ConditionAnd": "{RenderDNFColors}",
+                                        "Property": "Foreground",
+                                        "Value": "{DNFText}"
                                     },
                                     {
-                                        "Condition" : "{RenderFLBackground}",
-                                        "ConditionAND": "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
-                                        "Setters": [
-                                            {
-                                                "Property": "Background",
-                                                "Value": "#66DC46DC"
-                                            }
-                                        ]
+                                        "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "ConditionAND": "{RenderFLBackground}",
+                                        "Property": "Background",
+                                        "Value": "#66DC46DC"
                                     },
                                     
                                 ]

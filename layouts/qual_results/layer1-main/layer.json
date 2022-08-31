@@ -95,26 +95,16 @@
                                                 ]
                                             },
                                             {
-                                                "Condition" : "{RenderDNFText}",
-                                                "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                                                 "Setters" :
-                                                [
-                                                     {
-                                                          "Property" : "Foreground",
-                                                          "Value" : "{DNFText}"
-                                                     }
-                                                ]
+                                                "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                                "ConditionAND" : "{RenderDNFColors}",
+                                                "Property" : "Foreground",
+                                                "Value" : "{DNFText}"
                                             },
                                             {
-                                                "Condition" : "{RenderDNFText}",
-                                                "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                                                "Setters" :
-                                               [
-                                                    {
-                                                         "Property" : "Foreground",
-                                                         "Value" : "{DNFText}"
-                                                    }
-                                               ]
+                                                "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                                "ConditionAND" : "{RenderDNFColors}",
+                                                "Property" : "Foreground",
+                                                "Value" : "{DNFText}"
                                            },
                                         ]     
                                     },

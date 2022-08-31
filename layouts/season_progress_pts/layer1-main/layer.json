@@ -170,42 +170,27 @@
                                     //},
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 1}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P1Foreground}"
-                                            }
-                                        ]
+                                        "ConditionAND": "{RenderP1Colors}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{P1Foreground}"
                                     },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 2}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P2Foreground}"
-                                            }
-                                        ]
+                                        "ConditionAND": "{RenderP2Colors}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{P2Foreground}"
                                     },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter= 3}",
-                                        "Setters" :
-                                        [
-                                            {
-                                                "Property" : "Foreground",
-                                                "Value" : "{P3Foreground}"
-                                            }
-                                        ]
+                                        "ConditionAND": "{RenderP3Colors}",
+                                        "Property" : "Foreground",
+                                        "Value" : "{P3Foreground}"
                                     },
                                     {
                                         "Condition": "{Item.MajorRace.IsRaceFastestLap}",
-                                        "Setters": [
-                                            {
-                                                "Property": "Background",
-                                                "Value": "{FastestLapBG}"
-                                            }
-                                        ]
+                                        "ConditionAND": "{RenderFLBackground}",
+                                        "Property": "Background",
+                                        "Value": "{FastestLapBG}"
                                     },
                                     {
                                         "Condition": "{Item.MajorQual.Position, Converter=NumberEquals, Parameter=1}",

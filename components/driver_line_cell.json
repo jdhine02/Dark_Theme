@@ -5,7 +5,7 @@
     "Background": "{BackgroundDefault}",
     "ColorizeBackground": {
         "Enabled": false,
-        "Color": "#FFFF00",
+        "Color": "{WhiteText}",
         "BlendPercentage": 50
     },
     "Triggers": [
@@ -167,37 +167,22 @@
                             //]
                         //},
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                            "ConditionAND": "{RenderDNFColors}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                            "ConditionAND": "{RenderDNFColors}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
+                            "ConditionAND": "{RenderDNFColors}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
                         
                     ],
@@ -248,38 +233,24 @@
                             //]
                         //},
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                            "ConditionAnd": "{RenderDNFText}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                            "ConditionAND": "{RenderDNFColors}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
                         {
-                            "Condition" : "{RenderDNFTex}",
-                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
-                            "Setters" :
-                            [
-                                {
-                                    "Property" : "Foreground",
-                                    "Value" : "{DNFText}"
-                                }
-                            ]
+                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
+                            "ConditionAND": "{RenderDNFColors}",
+                            "Property": "Foreground",
+                            "Value": "{DNFText}"
                         },
+                        
                         
                     ]
 
