@@ -15,7 +15,7 @@
   "RenderP1Colors": true,
   "RenderP2Colors": true,
   "RenderP3Colors": true,
-  "RenderDNFColors": false,
+  "RenderDNFColors": true,
   "RenderFLBackground": true,
   "FirstCustomStickerName": "BROADCAST/COMMENTATOR",
   "FirstCustomStickerValue": "Hines J/Madrolla"

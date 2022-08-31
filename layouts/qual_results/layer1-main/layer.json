@@ -96,13 +96,13 @@
                                             },
                                             {
                                                 "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                                                "ConditionAND" : "{RenderDNFColors}",
+                                                "ConditionAnd" : "{RenderDNFColors}",
                                                 "Property" : "Foreground",
                                                 "Value" : "{DNFText}"
                                             },
                                             {
                                                 "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                                                "ConditionAND" : "{RenderDNFColors}",
+                                                "ConditionAnd" : "{RenderDNFColors}",
                                                 "Property" : "Foreground",
                                                 "Value" : "{DNFText}"
                                            },

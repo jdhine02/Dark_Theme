@@ -194,7 +194,7 @@
                                    // },
                                     {
                                         "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
-                                        "ConditionAND" : "{RenderP1Colors}",
+                                        "ConditionAnd" : "{RenderP1Colors}",
                                         "Property" : "Foreground",
                                         "Value" : "{P1Foreground}"
 
@@ -207,7 +207,7 @@
                                     },
                                     {
                                         "Condition": "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=3}",
-                                        "ConditionAND": "{RenderP3Colors}",
+                                        "ConditionAnd": "{RenderP3Colors}",
                                         "Property" : "Foreground",
                                         "Value" : "{P3Foreground}"
                                     },
@@ -219,7 +219,7 @@
                                     },
                                     {
                                         "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
-                                        "ConditionAND": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderFLBackground}",
                                         "Property": "Background",
                                         "Value": "#66DC46DC"
                                     },

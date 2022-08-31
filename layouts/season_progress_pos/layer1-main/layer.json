@@ -152,7 +152,7 @@
                                 "Triggers": [
                                     {
                                         "Condition" : "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
-                                        "ConditionAND": "{RenderDNFColors}",
+                                        "ConditionAnd": "{RenderDNFColors}",
                                         "Setters": [
                                             {
                                                 "Property": "FontSize",
@@ -194,31 +194,31 @@
                                    // },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
-                                        "ConditionAND" : "{RenderP1Colors}",
+                                        "ConditionAnd" : "{RenderP1Colors}",
                                         "Property" : "Foreground",
                                         "Value" : "{P1Foreground}"
                                     },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
-                                        "ConditionAND" : "{RenderP2Colors}",
+                                        "ConditionAnd" : "{RenderP2Colors}",
                                         "Property" : "Foreground",
                                         "Value" : "{P2Foreground}"
                                     },
                                     {
                                         "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
-                                        "ConditionAND" : "{RenderP3Colors}",
+                                        "ConditionAnd" : "{RenderP3Colors}",
                                         "Property" : "Foreground",
                                         "Value" : "{P3Foreground}"
                                     },
                                     {
                                         "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                                        "ConditionAND" : "{RenderDNFColors}",
+                                        "ConditionAnd" : "{RenderDNFColors}",
                                         "Property" : "Foreground",
                                         "Value" : "{DNFText}"
                                     },
                                     {
                                         "Condition" : "{Item.MajorRace.IsRaceFastestLap}",
-                                        "ConditionAND": "{RenderFLBackground}",
+                                        "ConditionAnd": "{RenderFLBackground}",
                                         "Property": "Background",
                                         "Value": "{FastestLapBG}"
                                     },

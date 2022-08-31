@@ -168,19 +168,19 @@
                         //},
                         {
                             "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                            "ConditionAND": "{RenderDNFColors}",
+                            "ConditionAnd": "{RenderDNFColors}",
                             "Property": "Foreground",
                             "Value": "{DNFText}"
                         },
                         {
                             "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                            "ConditionAND": "{RenderDNFColors}",
+                            "ConditionAnd": "{RenderDNFColors}",
                             "Property": "Foreground",
                             "Value": "{DNFText}"
                         },
                         {
                             "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
-                            "ConditionAND": "{RenderDNFColors}",
+                            "ConditionAnd": "{RenderDNFColors}",
                             "Property": "Foreground",
                             "Value": "{DNFText}"
                         },
@@ -240,13 +240,13 @@
                         },
                         {
                             "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                            "ConditionAND": "{RenderDNFColors}",
+                            "ConditionAnd": "{RenderDNFColors}",
                             "Property": "Foreground",
                             "Value": "{DNFText}"
                         },
                         {
                             "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
-                            "ConditionAND": "{RenderDNFColors}",
+                            "ConditionAnd": "{RenderDNFColors}",
                             "Property": "Foreground",
                             "Value": "{DNFText}"
                         },
