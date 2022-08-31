@@ -6,7 +6,7 @@
     "BackgroundImage": "images/team/{Item.Team.Name}bg.png",
     "Triggers":[
         {
-            "Condition": "{RenderLineupBG, Converter=BoolReverse}",
+            "Condition": "{RenderF1LineupBG, Converter=BoolReverse}",
             "Property":"BackgroundImage",
             "Value":"",
         }

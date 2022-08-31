@@ -151,7 +151,8 @@
                                 },
                                 "Triggers": [
                                     {
-                                        "Condition": "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
+                                        "Condition" : "{RenderDNFTex}",
+                                        "ConditionAND": "{Item.IsRaceMajorClassified, Converter=BoolReverse}",
                                         "Setters": [
                                             {
                                                 "Property": "FontSize",
@@ -192,7 +193,8 @@
                                      //   ]
                                    // },
                                     {
-                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "Condition" : "{RenderP1Colors}",
+                                        "ConditionAND" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=1}",
                                         "Setters" :
                                         [
                                             {
@@ -202,7 +204,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "Condition" : "{RenderP2Colors}",
+                                        "ConditionAND" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=2}",
                                         "Setters" :
                                         [
                                             {
@@ -212,7 +215,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
+                                        "Condition" : "{RenderP3Colors}",
+                                        "ConditionAND" : "{Item.RaceMajorPosition, Converter=NumberEquals, Parameter=3}",
                                         "Setters" :
                                         [
                                             {
@@ -222,7 +226,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                        "Condition" : "{RenderDNFText}",
+                                        "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                                         "Setters" :
                                         [
                                             {
@@ -232,7 +237,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition": "{Item.MajorRace.IsRaceFastestLap}",
+                                        "Condition" : "{RenderFLBackground}",
+                                        "ConditionAND": "{Item.MajorRace.IsRaceFastestLap}",
                                         "Setters": [
                                             {
                                                 "Property": "Background",

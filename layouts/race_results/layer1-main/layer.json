@@ -90,7 +90,8 @@
                                 },
                                     "Triggers" : [ 
                                         {
-                                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                            "Condition" : "{RenderDNFText}",
+                                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                                             "Setters" :
                                             [
                                                 {
@@ -216,7 +217,8 @@
                                                    //     ]
                                                    // },
                                                     {
-                                                        "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                                        "Condition" : "{RenderDNFText}",
+                                                        "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                                         "Setters" :
                                                         [
                                                             {

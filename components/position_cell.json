@@ -12,7 +12,8 @@
     },
     "Triggers" : [ 
         {
-            "Condition" : "{Item.Position, Converter=NumberEquals, Parameter=1}",
+            "Condition" : "{RenderP1Colors}",
+            "ConditionAND": "{Item.Position, Converter=NumberEquals, Parameter=1}",
             "Setters" :
             [
                 {
@@ -22,7 +23,8 @@
             ]
         },
         {
-            "Condition" : "{Item.Position, Converter=NumberEquals, Parameter=2}",
+            "Condition" : "{RenderP2}",
+            "ConditionAND" : "{Item.Position, Converter=NumberEquals, Parameter=2}",
             "Setters" :
             [
                 {
@@ -30,9 +32,11 @@
                     "Value" : "{P2Foreground}"
                 }
             ]
+            
         },
         {
-            "Condition" : "{Item.Position, Converter=NumberEquals, Parameter=3}",
+            "Condition" : "{RenderP3Colors}",
+            "ConditionAND" : "{Item.Position, Converter=NumberEquals, Parameter=3}",
             "Setters" :
             [
                 {
@@ -42,16 +46,18 @@
             ]
         },
         {
-            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+            "Condition" : "{RenderDNFTex}",
+            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
             "Setters" :
             [
                 {
                     "Property" : "Foreground",
                     "Value" : "{DNFText}"
                 }
-            ]
+            ],
         },
         
-    ]
+    ],
+
    
 }

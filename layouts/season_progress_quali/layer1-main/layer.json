@@ -193,7 +193,8 @@
                                      //   ]
                                    // },
                                     {
-                                        "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "Condition" : "{RenderP1Colors}",
+                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
                                         "Setters" :
                                         [
                                             {
@@ -203,7 +204,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=2}",
+                                        "Condition" : "{RenderP2Colors}",
+                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=2}",
                                         "Setters" :
                                         [
                                             {
@@ -223,7 +225,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition" : "{Item.QualMajorPosition, Converter=StringEquals, Parameter=DNF}",
+                                        "Condition" : "{RenderDNFText}",
+                                        "ConditionAND" : "{Item.QualMajorPosition, Converter=StringEquals, Parameter=DNF}",
                                         "Setters" :
                                         [
                                             {
@@ -233,7 +236,8 @@
                                         ]
                                     },
                                     {
-                                        "Condition": "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
+                                        "Condition" : "{RenderFLBackground}",
+                                        "ConditionAND": "{Item.QualMajorPosition, Converter=NumberEquals, Parameter=1}",
                                         "Setters": [
                                             {
                                                 "Property": "Background",

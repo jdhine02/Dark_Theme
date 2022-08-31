@@ -167,7 +167,8 @@
                             //]
                         //},
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                             "Setters" :
                             [
                                 {
@@ -177,7 +178,8 @@
                             ]
                         },
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                             "Setters" :
                             [
                                 {
@@ -187,7 +189,8 @@
                             ]
                         },
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
                             "Setters" :
                             [
                                 {
@@ -197,7 +200,8 @@
                             ]
                         },
                         
-                    ]
+                    ],
+                    "RenderIf": "{RenderDriverNumbers}",
 
                 },
                 //name
@@ -244,7 +248,8 @@
                             //]
                         //},
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
                             "Setters" :
                             [
                                 {
@@ -254,7 +259,8 @@
                             ]
                         },
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                             "Setters" :
                             [
                                 {
@@ -264,7 +270,8 @@
                             ]
                         },
                         {
-                            "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
+                            "Condition" : "{RenderDNFTex}",
+                            "ConditionAND" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
                             "Setters" :
                             [
                                 {
@@ -288,7 +295,8 @@
                     "ImageOptions": {
                         "Path": "{Item.Driver.Nationality.LogoPath}",
                         "VerticalAlignment": "Center"
-                    }
+                    },
+                    "RenderIf": "{RenderDriverFlags}",
                 },
 
                 //icon badges

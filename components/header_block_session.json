@@ -66,10 +66,23 @@
                             //"MarginLeft": 12,
                             //"MarginTop": 2,
                             "VerticalAlignment": "Center",
+                            "Source": "{Session.Track.CircuitName}",
+                            "FontName": "{FontNameWide}",                            
+                            "FontSize": 20,
+                            "Foreground" : "{WhiteText}",
+                            "RenderIf" : "{RenderTrackName}"
+                        },
+                        {
+                            "Name": "LocationName",
+                            "BlockType": "text",
+                            //"MarginLeft": 12,
+                            //"MarginTop": 2,
+                            "VerticalAlignment": "Center",
                             "Source": "{Session.Track.CircuitFullName}",
                             "FontName": "{FontNameWide}",                            
                             "FontSize": 20,
-                            "Foreground" : "{WhiteText}"
+                            "Foreground" : "{WhiteText}",
+                            "RenderIf": "{RenderTrackNameFull}"
                         },
                     
                 
@@ -87,7 +100,8 @@
                        "Foreground" : "{WhiteText}"
                      },
                      
-                    ]
+                    ],
+                    "RenderIf": "{RenderSessionDateTime}",
                 }
                                                   
                  //{
@@ -118,7 +132,8 @@
                                 "Path": "images/tracks/track_{Session.Track.CircuitName}.png"
                             }
                         }
-                    ]
+                    ],
+                    "RenderIf": "{RenderTrackImage}",
                 },
 
         //headerRight
@@ -234,7 +249,8 @@
                                             "FontSize": 20,
                                             "Foreground" : "{WhiteText}"
                                         },                                          
-                                    ]
+                                    ],
+                                    "RenderIf":"{RenderAirTemp}",
                                 },
                                 {
                                     "BlockType": "stack",
@@ -249,7 +265,8 @@
                                             "FontSize": 20,
                                             "Foreground" : "{WhiteText}"
                                         }
-                                    ]
+                                    ],
+                                    "RenderIf":"{RenderTrackTemp}",
                                 }
                             ]
                         },

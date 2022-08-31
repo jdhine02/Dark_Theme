@@ -3,8 +3,20 @@
   "ShowWinnerInCalendar": true,
   "ShowEventDescriptionInCalendar": true,
   "RenderBroadcaster": true,
-  "RenderLineupBG": true,
+  "RenderF1LineupBG": true,
+  "RenderDriverNumbers": true,
+  "RenderDriverFlags": true,
+  "RenderTrackName": false,
+  "RenderTrackNameFull": true,
+  "RenderTrackImage": true,
+  "RenderSessionDateTime": true,
+  "RenderAirTemp": true,
+  "RenderTrackTemp": true,
+  "RenderP1Colors": true,
+  "RenderP2Colors": true,
+  "RenderP3Colors": true,
+  "RenderDNFColors": false,
+  "RenderFLBackground": true,
   "FirstCustomStickerName": "BROADCAST/COMMENTATOR",
-  "FirstCustomStickerValue": "Hines J/Nichols/Tekashi",
-  //"SecondCalendarEventsInColumn": 12
+  "FirstCustomStickerValue": "Hines J/Madrolla"
 }
