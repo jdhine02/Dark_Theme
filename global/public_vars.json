@@ -12,11 +12,12 @@
   "RenderSessionDateTime": true,
   "RenderAirTemp": true,
   "RenderTrackTemp": true,
+  "RenderStatsFinishPos": false,
   "RenderP1Colors": true,
   "RenderP2Colors": true,
   "RenderP3Colors": true,
   "RenderDNFColors": true,
   "RenderFLBackground": true,
   "FirstCustomStickerName": "BROADCAST/COMMENTATOR",
-  "FirstCustomStickerValue": "Hines J/Madrolla"
+  "FirstCustomStickerValue": "Hines / Nichols"
 }

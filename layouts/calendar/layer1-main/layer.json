@@ -25,7 +25,7 @@
                                 "Opacity" : 75,
                                 "Source": "{Season.LeagueInfo.LeagueName}",
                                 "FontName": "{FontNameWide}",
-                                "FontSize": 20,
+                                "FontSize": 24,
                                 "Foreground": "{WhiteText}"
                             },
                             {
@@ -33,7 +33,7 @@
                                 "Source": " · {Season.Name}",
                                 "VerticalAlignment": "Center",
                                 "FontName": "{FontNameWide}",
-                                "FontSize": 16,
+                                "FontSize": 22,
                                 "Foreground": "{WhiteText}"
                             }
                         ]
@@ -174,7 +174,7 @@
                          //layout
                          {
                             "BlockType": "image",
-                            "Height": 75,
+                            "Height": 100,
                             //"Padding" : "0, 8",
                             "PaddingTop": 8,
                             "PaddingBottom": 8,
@@ -248,9 +248,9 @@
                                 "Source": "{Item.WinnerString}",
                                 "HorizontalAlignment": "Left",
                                 "VerticalAlignment": "Center",
-                                "FontName": "{FontNameDefault}",
+                                "FontName": "{FontNameBold}",
                                 "Foreground": "{P1Foreground}",
-                                "FontSize": 20,
+                                "FontSize": 24,
                                 "Background": "{BackgroundDefault}",
                                 
                             }

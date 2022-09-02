@@ -38,19 +38,21 @@
                         "TextOptionsExtern" : "tableColumnHeader"
                     },
                     "Columns": [
-                        // //position
-                        //{
-                        //    "Header": "",
-                        //    "Template": {
-                        //        "BlockType" : "component",                                
-                        //        "ComponentName" : "position_cell",
-                        //        "ComponentOptions" :{
-                        //            "Vars" :{
-                        //                "position" : "{Item.PositionString}"
-                        //            }
-                        //        }
-                        //    }
-                        //},
+                        //position
+                        {
+                            "Header": "",
+                            "Template": {
+                                "BlockType" : "component",                                
+                                "ComponentName" : "position_cell",
+                                "ComponentOptions" :{
+                                    "Vars" :{
+                                        "position" : "{Item.PositionString}"
+                                    }
+                                }
+                            },
+                            
+                            "RenderIf": "{RenderStatsFinishPos}",
+                        },
 
                         //driver line
                         {
@@ -686,7 +688,7 @@
                         },
                         //penaltiesPos
                         {
-                            "Header": "[Pen. Pos.]",
+                            "Header": "Pen. Pos.",
                             "Template": {
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
@@ -694,7 +696,7 @@
                                 "Items": [
                                     {
                                         "BlockType": "text",
-                                        "Source": "   {Item.PenaltyPosStewards, Converter=NumberZeroToEmpty}   ",
+                                        "Source": "    {Item.PenaltyPosStewards, Converter=NumberZeroToEmpty}    ",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
                                         "TextOptions": {
