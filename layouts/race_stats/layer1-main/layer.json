@@ -783,7 +783,7 @@
                                         "TextOptions": {
                                                         "FontName": "{FontNameDefault}",
                                                         "FontSize": 28,
-                                                        "Foreground": "{PenaltyPositionForeground}",
+                                                        "Foreground": "{WhiteText}",
                                                         "HorizontalAlignment": "Center"
                                             },
                                         },                                        
