@@ -4,18 +4,10 @@
     "PaddingRight": 4,
     "Background": "{BackgroundDefault}",
     "ColorizeBackground": {
-        "Enabled": false,
-        "Color": "{P1Foreground}",
-        "BlendPercentage": 50
+        "Enabled": true,
+        "Color": "{Item.Team.Color}",
+        "BlendPercentage": 75
     },
-    "Triggers": [
-        {
-            "Condition": "{ItemIndex, Converter=NumberEquals, Parameter=0}",
-            "Property": "ColorizeBackgroundOptions.Enabled",
-            "Value": true
-        },
-        
-    ],
     "Items": [
         //left part
         {
@@ -42,7 +34,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{MercedesPrimary}"
+                                    "Value" : "{MercedesSecondary}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -79,7 +71,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{FerrariSecondary}"
+                                    "Value" : "{Ferrari4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -97,7 +89,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlfaRomeoPrimary}"
+                                    "Value" : "{AlfaRomeo3rd}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -133,7 +125,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlphaTauri3rd}"
+                                    "Value" : "{AlphaTauriSecondary}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -169,7 +161,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AstonMartin3rd}"
+                                    "Value" : "{AstonMartin4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -187,7 +179,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlpinePrimary}"
+                                    "Value" : "{Alpine3rd}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -195,7 +187,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "80"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -416,7 +408,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{MercedesPrimary}"
+                                            "Value" : "{MercedesSecondary}"
                                         }
                                     ]
                                 },
@@ -436,7 +428,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{FerrariPrimary}"
+                                            "Value" : "{Ferrari4th}"
                                         }
                                     ]
                                 },
@@ -446,7 +438,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AlfaRomeoSecondary}"
+                                            "Value" : "{AlfaRomeo4th}"
                                         }
                                     ]
                                 },
@@ -466,7 +458,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AlphaTauriPrimary}"
+                                            "Value" : "{AlphaTauriSecondary}"
                                         }
                                     ]
                                 },
@@ -486,7 +478,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AstonMartinSecondary}"
+                                            "Value" : "{AstonMartin3rd}"
                                         }
                                     ]
                                 },

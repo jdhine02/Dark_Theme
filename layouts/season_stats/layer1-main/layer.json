@@ -60,7 +60,7 @@
                             "WidthStretch" : true,                            
                             "Template": {
                                 "BlockType" : "component",
-                                "ComponentName" : "driver_line_cell"   
+                                "ComponentName" : "driver_line_cell_stats"   
                             }
                         },   
 
@@ -72,6 +72,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "   {Season.SeasonCurrentNumberEvent, Converter=NumberZeroToEmpty}   ",                                
                                 "TextOptionsExtern" : "primaryNumber",
                                 "Foreground" : "{DNFText}"
@@ -84,6 +89,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "    {Item.RacesCount, Converter=NumberZeroToEmpty}    ",                                
                                 "TextOptionsExtern" : "primaryNumber"
                             }
@@ -95,6 +105,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.QualCount, Converter=NumberZeroToEmpty}",                                
                                 "TextOptionsExtern" : "primaryNumber"
                             }
@@ -106,6 +121,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.LapsCount, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{WhiteTextText}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -140,6 +160,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.CountQualP1, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{Poles}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -152,6 +177,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.BestPosQual, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{WhiteTextText}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -166,6 +196,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceMinor.countP1, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{Standings1stCountForeground}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -178,6 +213,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceMinor.countP2, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "#666664",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -190,6 +230,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceMinor.countP3, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{Standings3rdCountForeground}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -202,6 +247,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceMinor.BestPos, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{WhiteTextText}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -217,6 +267,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.CountP1, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{P1Foreground}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -229,6 +284,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.CountP2, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{P2Foreground}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -241,6 +301,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.CountP3, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{P3Foreground}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -253,6 +318,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.BestPos, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{WhiteTextText}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -267,6 +337,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceFastestLapCount, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{FastestLap}",
                                 "TextOptionsExtern" : "primaryNumber"
@@ -278,6 +353,11 @@
                                 "BlockType": "dock",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "text",
@@ -302,6 +382,11 @@
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Source" : "{Item.RaceDriverDayCount, Converter=NumberZeroToEmpty}",
                                 "Foreground" : "{DoD}",
                                 "TextOptionsExtern" : "primaryNumber"

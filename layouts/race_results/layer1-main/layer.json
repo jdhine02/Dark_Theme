@@ -120,7 +120,7 @@
                                                 "VerticalAlignment": "Center",
                                                 "TextOptions": {
                                                     "FontName": "{FontNameDefault}",
-                                                    "FontSize": 20,
+                                                    "FontSize": 24,
                                                     "Foreground": "{PenaltyTimeGameForeground}",
                                                     "HorizontalAlignment": "Center"
                                                 }
@@ -132,7 +132,7 @@
                                                 "VerticalAlignment": "Center",
                                                 "TextOptions": {
                                                     "FontName": "{FontNameDefault}",
-                                                    "FontSize": 20,
+                                                    "FontSize": 24,
                                                     "Foreground": "{PenaltyTimeStewardsForeground}",
                                                     "HorizontalAlignment": "Center"
                                                 }

@@ -61,7 +61,7 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "driver_line_cell"                                
+                                "ComponentName" : "driver_line_cell_stats"                                
                             }
                         },
                         //StartingPosition
@@ -71,6 +71,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "{Item.GridPosition}",
                                 "HorizontalAlignment": "Left",
@@ -91,7 +96,7 @@
                                             "ConditionAnd": "{RenderDNFColors}",
                                             "Property": "Foreground",
                                             "Value": "{DNFText}"
-                                        }
+                                        },
                                     ]
                                  }
                              },
@@ -102,6 +107,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "{Item.Position}",
                                 "HorizontalAlignment": "Left",
@@ -126,13 +136,14 @@
                                     ]
                                  }
                              },
-                        //position_jump
+                        //Position Jump
                         {
-                            "Header": "Pos. +/-",
+                            "Header": "",
+                            "WidthStretch" : true,
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "position_jump_cell",    
+                                "ComponentName" : "position_jump_cell_stats"                                
                             }
                         },
                         //points
@@ -193,6 +204,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "{Item.IntervalRace}",
                                 "HorizontalAlignment": "Left",
@@ -224,6 +240,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "{Item.AbsoluteTime}",
                                 "HorizontalAlignment": "Left",
@@ -255,6 +276,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "  {Item.LapsCount, Converter=NumberZeroToEmpty}  ",
                                 "HorizontalAlignment": "Left",
@@ -287,6 +313,11 @@
                                 "Padding": "12, 0",
 
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "BlockType": "text",
                                 "Source": "  {Item.PitsCount, Converter=NumberZeroToEmpty}  ",
                                 "HorizontalAlignment": "Left",
@@ -319,6 +350,11 @@
                                 "Spacing": 4,
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "ItemStackOptions": {
                                     "ItemSource": "{Item.Stints}",
                                     "Template": {
@@ -360,6 +396,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "stack",
@@ -415,6 +456,11 @@
                                     "BlockType": "dock",
                                     "Padding": "12, 0",
                                     "Background": "{BackgroundDefault}",
+                                    "ColorizeBackground": {
+                                        "Enabled": true,
+                                        "Color": "{Item.Team.Color}",
+                                        "BlendPercentage": 75
+                                    },
                                     "Items": [
                                         {
                                             "BlockType": "stack",
@@ -443,6 +489,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "text",
@@ -467,6 +518,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "stack",
@@ -522,6 +578,11 @@
                                         "BlockType": "dock",
                                         "Padding": "12, 0",
                                         "Background": "{BackgroundDefault}",
+                                        "ColorizeBackground": {
+                                            "Enabled": true,
+                                            "Color": "{Item.Team.Color}",
+                                            "BlendPercentage": 75
+                                        },
                                         "Items": [
                                             {
                                                 "BlockType": "stack",
@@ -577,6 +638,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "stack",
@@ -633,6 +699,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "stack",
@@ -646,7 +717,7 @@
                                                 "VerticalAlignment": "Center",
                                                 "TextOptions": {
                                                     "FontName": "{FontNameDefault}",
-                                                    "FontSize": 20,
+                                                    "FontSize": 24,
                                                     "Foreground": "{PenaltyTimeGameForeground}",
                                                     "HorizontalAlignment": "Center"
                                                 }
@@ -663,6 +734,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "stack",
@@ -676,7 +752,7 @@
                                                 "VerticalAlignment": "Center",
                                                 "TextOptions": {
                                                     "FontName": "{FontNameDefault}",
-                                                    "FontSize": 20,
+                                                    "FontSize": 24,
                                                     "Foreground": "{PenaltyTimeStewardsForeground}",
                                                     "HorizontalAlignment": "Center"
                                                 }
@@ -693,6 +769,11 @@
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
                                 "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
                                 "Items": [
                                     {
                                         "BlockType": "text",
