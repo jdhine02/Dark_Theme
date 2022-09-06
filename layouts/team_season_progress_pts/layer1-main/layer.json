@@ -52,10 +52,10 @@
                             }
                         },
 
-                        //driver line
+                        //team line
                         {
                             "Header": "",
-                            "MarginRight" : 24,
+                            "MarginRight" : 0,
                             "Template": {
                                 "BlockType": "component",
                                 "ComponentName": "team_line_cell"
@@ -64,8 +64,8 @@
 
                          //points
                          {
-                            "Header": "",
-                            "MarginLeft" : 20,
+                            "Header": "Points",
+                            "MarginLeft" : 12,
                             "Template": {
                                 
                                 "BlockType": "dock",
