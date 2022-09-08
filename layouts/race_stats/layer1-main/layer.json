@@ -506,6 +506,30 @@
                                             "HorizontalAlignment": "Center",
                                             "Foreground" : "{WhiteText}",
                                         },
+                                        "Triggers" : [
+                                            {
+                                                "Condition" : "{Item.IsRaceFastestLap}",
+                                                "Setters" :
+                                                [
+                                                    {
+                                                        "Property" : "Foreground",
+                                                        "Value" : "{FastestLap}"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                                "ConditionAnd": "{RenderDNFColors}",
+                                                "Property": "Foreground",
+                                                "Value": "{DNFText}"
+                                            },
+                                            {
+                                                "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                                "ConditionAnd": "{RenderDNFColors}",
+                                                "Property": "Foreground",
+                                                "Value": "{DNFText}"
+                                            }
+                                        ]
                                     }
                                 ]
                             }                        
