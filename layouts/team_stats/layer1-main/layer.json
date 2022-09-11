@@ -94,7 +94,7 @@
                         //    }
                         //},
                         {
-                            "Header" : "Qualies",
+                            "Header" : "# of Qual",
                             "MarginLeft" : 0,
                             "Template":{
                                 "BlockType" : "text",
@@ -258,6 +258,79 @@
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
+
+                                                //Finish Stats
+                                                {
+                                                    "Header" : "Top 5s",
+                                                    "MarginLeft" : 0,
+                                                    "Template":{
+                                                        "BlockType" : "text",
+                                                        "Padding": "24, 0",
+                                                        "Background": "{BackgroundDefault}",
+                                                        "ColorizeBackground": {
+                                                            "Enabled": true,
+                                                            "Color": "{Item.Team.Color}",
+                                                            "BlendPercentage": 75
+                                                        },
+                                                        "Source" : "{Item.Top5, Converter=NumberZeroToEmpty}",
+                                                        "Foreground" : "{WhiteTextText}",
+                                                        "TextOptionsExtern" : "primaryNumber"
+                                                    }
+                                                },
+                                                //Finish Stats
+                                                {
+                                                    "Header" : "Top 10s",
+                                                    "MarginLeft" : 0,
+                                                    "Template":{
+                                                        "BlockType" : "text",
+                                                        "Padding": "24, 0",
+                                                        "Background": "{BackgroundDefault}",
+                                                        "ColorizeBackground": {
+                                                            "Enabled": true,
+                                                            "Color": "{Item.Team.Color}",
+                                                            "BlendPercentage": 75
+                                                        },
+                                                        "Source" : "{Item.Top10, Converter=NumberZeroToEmpty}",
+                                                        "Foreground" : "{WhiteTextText}",
+                                                        "TextOptionsExtern" : "primaryNumber"
+                                                    }
+                                                },
+                                                //Finish Stats
+                                                {
+                                                    "Header" : "DNFs",
+                                                    "MarginLeft" : 0,
+                                                    "Template":{
+                                                        "BlockType" : "text",
+                                                        "Padding": "24, 0",
+                                                        "Background": "{BackgroundDefault}",
+                                                        "ColorizeBackground": {
+                                                            "Enabled": true,
+                                                            "Color": "{Item.Team.Color}",
+                                                            "BlendPercentage": 75
+                                                        },
+                                                        "Source" : "{Item.Dnf, Converter=NumberZeroToEmpty}",
+                                                        "Foreground" : "{WhiteTextText}",
+                                                        "TextOptionsExtern" : "primaryNumber"
+                                                    }
+                                                },
+                                                //Finish Stats
+                                                {
+                                                    "Header" : "DNSs",
+                                                    "MarginLeft" : 0,
+                                                    "Template":{
+                                                        "BlockType" : "text",
+                                                        "Padding": "24, 0",
+                                                        "Background": "{BackgroundDefault}",
+                                                        "ColorizeBackground": {
+                                                            "Enabled": true,
+                                                            "Color": "{Item.Team.Color}",
+                                                            "BlendPercentage": 75
+                                                        },
+                                                        "Source" : "{Item.Dns, Converter=NumberZeroToEmpty}",
+                                                        "Foreground" : "{WhiteTextText}",
+                                                        "TextOptionsExtern" : "primaryNumber"
+                                                    }
+                                                },
 
                         //stats
                         {
