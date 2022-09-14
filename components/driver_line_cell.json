@@ -246,26 +246,7 @@
                                   //  "Value" : "{P3Foreground}"
                                 //}
                             //]
-                        //},
-                        {
-                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
-                            "ConditionAnd": "{RenderDNFColors}",
-                            "Property": "Foreground",
-                            "Value": "{DNFText}"
-                        },
-                        {
-                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
-                            "ConditionAnd": "{RenderDNFColors}",
-                            "Property": "Foreground",
-                            "Value": "{DNFText}"
-                        },
-                        {
-                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
-                            "ConditionAnd": "{RenderDNFColors}",
-                            "Property": "Foreground",
-                            "Value": "{DNFText}"
-                        },
-                        
+                        //},                        
                     ],
                     "RenderIf": "{RenderDriverNumbers}",
 

@@ -18,7 +18,7 @@
                             "BlockType": "text",
                             "Source": "{Season.LeagueInfo.LeagueName}",                            
                             "FontName": "{FontNameWide}",
-                            "FontSize": 22,
+                            "FontSize": 42,
                             "Foreground" : "{WhiteText}"
                         },
                         {                            
@@ -26,7 +26,7 @@
                             "Source": "{Season.Name}",
                             "VerticalAlignment" : "Center",
                             "FontName": "{FontNameWide}",
-                            "FontSize": 22,
+                            "FontSize": 42,
                             "Foreground" : "{WhiteText}"
                         },
                         {
@@ -34,7 +34,7 @@
                             "Source": "Season Stats",
                             "FontName": "{FontNameWide}",  
                             "Foreground" :"{WhiteText}",                                 
-                            "FontSize": 20
+                            "FontSize": 38
                         },
 
                 //main header
@@ -114,7 +114,7 @@
                                     "Source": "[Round] {Season.SeasonCurrentNumberEvent} [of] {Season.SeasonOverallNumberEvents}",
                                     "FontName": "{FontNameWide}",
                                     "Foreground" : "{WhiteText}",
-                                    "FontSize": 20
+                                    "FontSize": 42
                                 },
 
                                 {
@@ -123,7 +123,7 @@
                                     "Source": "[Season progress] {Season.SeasonProgressPercent}%",
                                     "FontName": "{FontNameWide}",  
                                     "Foreground" :"{WhiteText}",                                 
-                                    "FontSize": 20
+                                    "FontSize": 42
                                 },
                             ]
                         },
@@ -131,7 +131,7 @@
                         {
                             "Name": "leagueLogo",
                             "BlockType": "image",
-                            "Height": 82,
+                            "Height": 100,
                             "MarginLeft": 36,
                             "Source": "{Season.LeagueInfo.LeagueLogo}"
                         }
