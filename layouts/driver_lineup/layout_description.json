@@ -1,6 +1,7 @@
 {
-    "LayoutName": "CustomLineuLinps",
+    "LayoutName": "Custom Line-up",
     "RenderType": "Lineups",
-	"RenderCaption": "Custom Line-ups",
-    "Index" : 2
+	"RenderCaption": "Custom Line-up",
+    "Index" : 1
+
 }

@@ -65,39 +65,23 @@
                         },   
 
                         //events
-                        {
-                            "Header" : "Total Events",
-                            "MarginLeft" : 12,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "   {Season.SeasonCurrentNumberEvent, Converter=NumberZeroToEmpty}   ",                                
-                                "TextOptionsExtern" : "primaryNumber",
-                                "Foreground" : "{DNFText}"
-                            }
-                        },
-                        {
-                            "Header" : "Races Entered",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "    {Item.RacesCount, Converter=NumberZeroToEmpty}    ",                                
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
+                       // {
+                       //     "Header" : "Total Events",
+                       //     "MarginLeft" : 12,
+                       //     "Template":{
+                       //         "BlockType" : "text",
+                       //         "Padding": "24, 0",
+                       //         "Background": "{BackgroundDefault}",
+                       //         "ColorizeBackground": {
+                       //             "Enabled": true,
+                       //             "Color": "{Item.Team.Color}",
+                       //             "BlendPercentage": 75
+                       //         },
+                       //         "Source" : "   {Season.SeasonCurrentNumberEvent, Converter=NumberZeroToEmpty}   ",                                
+                       //         "TextOptionsExtern" : "primaryNumber",
+                       //         "Foreground" : "{DNFText}"
+                       //     }
+                       // },
 
                         {
                             "Header" : "# of Laps",
@@ -112,7 +96,7 @@
                                     "BlendPercentage": 75
                                 },
                                 "Source" : "{Item.LapsCount, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
@@ -126,7 +110,7 @@
                                 "Padding": "24, 0",
                                 "Background": "{BackgroundDefault}",
                                 "Source" : "{Item.Points, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber",
                                 "ColorizeBackground": {
                                     "Enabled": true,
@@ -135,12 +119,24 @@
                                 },
                             }
                         },
+                        {
+                            "Header" : "Avg. Pts",
+                            "MarginLeft" : 0,
+                            "Template":{
+                                "BlockType" : "text",
+                                "Padding": "24, 0",
+                                "Background": "{BackgroundDefault}",
+                                "Source" : "{Item.DriverSeasonStatistics.5, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{WhiteText}",
+                            }
+                        },
+
 
                         //Qual
                         
                         {
                             "Header" : "# of Qual",
-                            "MarginLeft" : 0,
+                            "MarginLeft" : 12,
                             "Template":{
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
@@ -156,7 +152,7 @@
                         },
                         {
                             "Header" : "Poles",
-                            "MarginLeft" : 12,
+                            "MarginLeft" : 0,
                             "Template":{
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
@@ -184,86 +180,32 @@
                                     "BlendPercentage": 75
                                 },
                                 "Source" : "{Item.BestPosQual, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
-                        //Sprint
-                        
-                        {
-                            "Header" : "Wins",
-                            "MarginLeft" : 12,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.RaceMinor.countP1, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{Standings1stCountForeground}",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
-                        {
-                            "Header" : "2nd",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.RaceMinor.countP2, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "#666664",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
-                        {
-                            "Header" : "3rd",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.RaceMinor.countP3, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{Standings3rdCountForeground}",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
-                        {
-                            "Header" : "Best Finish",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.RaceMinor.BestPos, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
 
                         //podiums
-                        
+                        {
+                            "Header" : "Races",
+                            "MarginLeft" : 12,
+                            "Template":{
+                                "BlockType" : "text",
+                                "Padding": "24, 0",
+                                "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
+                                "Source" : "{Item.RacesCount, Converter=NumberZeroToEmpty}",                                
+                                "TextOptionsExtern" : "primaryNumber"
+                            }
+                        },
+
                         {
                             "Header" : "Wins",
-                            "MarginLeft" : 12,
+                            "MarginLeft" : 0,
                             "Template":{
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
@@ -325,7 +267,7 @@
                                     "BlendPercentage": 75
                                 },
                                 "Source" : "{Item.BestPos, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
@@ -333,7 +275,7 @@
                         //Finish Stats
                         {
                             "Header" : "Top 3s",
-                            "MarginLeft" : 0,
+                            "MarginLeft" : 12,
                             "Template":{
                                 "BlockType" : "text",
                                 "Padding": "24, 0",
@@ -343,31 +285,11 @@
                                     "Color": "{Item.Team.Color}",
                                     "BlendPercentage": 75
                                 },
-                                "Source" : "{Item.Top3, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Source" : "{Item.CountTop3, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
-                        //Finish Stats
-                        {
-                            "Header" : "Top 3s",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.Top3, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },
-                        
-                        //Finish Stats
                         {
                             "Header" : "Top 5s",
                             "MarginLeft" : 0,
@@ -380,12 +302,11 @@
                                     "Color": "{Item.Team.Color}",
                                     "BlendPercentage": 75
                                 },
-                                "Source" : "{Item.Top5, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Source" : "{Item.CountTop5, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
-                        //Finish Stats
                         {
                             "Header" : "Top 10s",
                             "MarginLeft" : 0,
@@ -398,12 +319,11 @@
                                     "Color": "{Item.Team.Color}",
                                     "BlendPercentage": 75
                                 },
-                                "Source" : "{Item.Top10, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Source" : "{Item.CountTop10, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{WhiteText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
-                        //Finish Stats
                         {
                             "Header" : "DNFs",
                             "MarginLeft" : 0,
@@ -416,12 +336,11 @@
                                     "Color": "{Item.Team.Color}",
                                     "BlendPercentage": 75
                                 },
-                                "Source" : "{Item.Dnf, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Source" : "{Item.CountDnf, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{PenaltyTimeStewardsForeground}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
-                        //Finish Stats
                         {
                             "Header" : "DNSs",
                             "MarginLeft" : 0,
@@ -434,8 +353,8 @@
                                     "Color": "{Item.Team.Color}",
                                     "BlendPercentage": 75
                                 },
-                                "Source" : "{Item.Dns, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{WhiteTextText}",
+                                "Source" : "{Item.CountDns, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{DNFText}",
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
@@ -458,6 +377,23 @@
                                 "TextOptionsExtern" : "primaryNumber"
                             }
                         },
+                        {
+                            "Header" : "DoD",
+                            "MarginLeft" : 0,
+                            "Template":{
+                                "BlockType" : "text",
+                                "Padding": "24, 0",
+                                "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
+                                "Source" : "{Item.RaceDriverDayCount, Converter=NumberZeroToEmpty}",
+                                "Foreground" : "{DoD}",
+                                "TextOptionsExtern" : "primaryNumber"
+                            }
+                        },  
                         {
                             "Header": "Warnings",
                             "Template": {
@@ -485,24 +421,7 @@
                                         },                                        
                                     ]
                                 },
-                            },
-                        {
-                            "Header" : "DoD",
-                            "MarginLeft" : 0,
-                            "Template":{
-                                "BlockType" : "text",
-                                "Padding": "24, 0",
-                                "Background": "{BackgroundDefault}",
-                                "ColorizeBackground": {
-                                    "Enabled": true,
-                                    "Color": "{Item.Team.Color}",
-                                    "BlendPercentage": 75
-                                },
-                                "Source" : "{Item.RaceDriverDayCount, Converter=NumberZeroToEmpty}",
-                                "Foreground" : "{DoD}",
-                                "TextOptionsExtern" : "primaryNumber"
-                            }
-                        },                  
+                            },                
                     ]
                 }
             }
