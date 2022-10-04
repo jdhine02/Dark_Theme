@@ -18,7 +18,7 @@
                             "BlockType": "text",
                             "Source": "{Season.LeagueInfo.LeagueName}",                            
                             "FontName": "{FontNameWide}",
-                            "FontSize": 22,
+                            "FontSize": 26,
                             "Foreground" : "{WhiteText}"
                         },
                         {                            
@@ -88,7 +88,7 @@
                                     "Source": "Driver Lineup",
                                     "FontName": "{FontNameWide}",
                                     "Foreground" : "{WhiteText}",
-                                    "FontSize": 20
+                                    "FontSize": 24
                                 },
                             ]
                         },
@@ -96,7 +96,7 @@
                         {
                             "Name": "leagueLogo",
                             "BlockType": "image",
-                            "Height": 82,
+                            "Height": 100,
                             "MarginLeft": 36,
                             "Source": "{Season.LeagueInfo.LeagueLogo}"
                         }
