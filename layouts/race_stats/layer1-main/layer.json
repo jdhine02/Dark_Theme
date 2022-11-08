@@ -305,6 +305,42 @@
                                     ]
                                  }
                              },
+                         //LapCount
+                        {
+                            "Header": "[Laps Lead]",
+                            "Template": {
+                                "Padding": "12, 0",
+
+                                "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
+                                "BlockType": "text",
+                                "Source": "  {Item.LeadLaps, Converter=NumberZeroToEmpty}  ",
+                                "HorizontalAlignment": "Left",
+                                "TextOptions": {
+                                    "FontName": "{FontNameDefault}",
+                                    "FontSize": 28,
+                                    "HorizontalAlignment": "Center",
+                                },
+                                    "Triggers" : [ 
+                                        {
+                                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                            "ConditionAnd": "{RenderDNFColors}",
+                                            "Property": "Foreground",
+                                            "Value": "{DNFText}"
+                                        }, 
+                                        {
+                                            "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                            "ConditionAnd": "{RenderDNFColors}",
+                                            "Property": "Foreground",
+                                            "Value": "{DNFText}"
+                                        }
+                                    ]
+                                 }
+                             },
 
                         //PitStops
                          {
@@ -533,8 +569,7 @@
                                     }
                                 ]
                             }                        
-                        },
-    
+                        }, 
                          //fastest Sectors
                          {
                             "Header": "Best S1",
@@ -716,6 +751,48 @@
                                 ]
                             }
                         },
+                        //Overtakes
+                        {
+                            "Header": "[Overtakes]",
+                            "Template": {
+                                "BlockType": "dock",
+                                "Padding": "12, 0",
+                                "Background": "{BackgroundDefault}",
+                                "ColorizeBackground": {
+                                    "Enabled": true,
+                                    "Color": "{Item.Team.Color}",
+                                    "BlendPercentage": 75
+                                },
+                                "Items": [
+                                    {
+                                        "BlockType": "text",
+                                        "Source": "{Item.OvertakesCount}",
+                                        "HorizontalAlignment": "Center",
+                                        "VerticalAlignment": "Center",
+                                        "TextOptions": {
+                                            "FontName": "{FontNameDefault}",
+                                            "FontSize": 28,
+                                            "HorizontalAlignment": "Center",
+                                            "Foreground" : "{WhiteText}",
+                                        },
+                                        "Triggers" : [
+                                            {
+                                                "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DNF}",
+                                                "ConditionAnd": "{RenderDNFColors}",
+                                                "Property": "Foreground",
+                                                "Value": "{DNFText}"
+                                            },
+                                            {
+                                                "Condition": "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
+                                                "ConditionAnd": "{RenderDNFColors}",
+                                                "Property": "Foreground",
+                                                "Value": "{DNFText}"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }                        
+                        },   
                         //penalties
                         {
                             "Header": "[Game Pen.]",
