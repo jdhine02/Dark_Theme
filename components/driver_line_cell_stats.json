@@ -61,7 +61,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -71,7 +71,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{FerrariSecondary}"
+                                    "Value" : "{Ferrari4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -79,7 +79,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "80"
                                 },
                             ]
                         },
@@ -89,7 +89,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlfaRomeo3rd}"
+                                    "Value" : "{AlfaRomeo4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -97,7 +97,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "75"
                                 },
                             ]
                         },
@@ -115,7 +115,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -125,7 +125,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlphaTauriSecondary}"
+                                    "Value" : "{AlphaTauriPrimary}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -133,7 +133,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "80"
+                                    "Value" : "90"
                                 },
                             ]
                         },
@@ -151,7 +151,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "95"
                                 },
                             ]
                         },
@@ -161,7 +161,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AstonMartin3rd}"
+                                    "Value" : "{AstonMartin4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -169,7 +169,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "50"
+                                    "Value" : "65"
                                 },
                             ]
                         },
@@ -179,7 +179,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{Alpine3rd}"
+                                    "Value" : "{Alpine4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -205,7 +205,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "80"
                                 },
                             ]
                         },
@@ -402,7 +402,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{MercedesSecondary}"
+                                            "Value" : "{Mercedes3rd}"
                                         }
                                     ]
                                 },
@@ -432,7 +432,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AlfaRomeo4th}"
+                                            "Value" : "{AlfaRomeo3rd}"
                                         }
                                     ]
                                 },
@@ -442,7 +442,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{McLarenPrimary}"
+                                            "Value" : "{McLaren4th}"
                                         }
                                     ]
                                 },
@@ -492,7 +492,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{RedBull3rd}"
+                                            "Value" : "{RedBull4th}"
                                         }
                                     ]
                                 },

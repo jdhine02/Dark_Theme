@@ -42,7 +42,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{MercedesPrimary}"
+                                    "Value" : "{MercedesSecondary}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -69,7 +69,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -79,7 +79,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{FerrariSecondary}"
+                                    "Value" : "{Ferrari4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -87,7 +87,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "80"
                                 },
                             ]
                         },
@@ -97,7 +97,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlfaRomeoPrimary}"
+                                    "Value" : "{AlfaRomeo4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -105,7 +105,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "75"
                                 },
                             ]
                         },
@@ -123,7 +123,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -133,7 +133,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlphaTauri3rd}"
+                                    "Value" : "{AlphaTauriPrimary}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -141,7 +141,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "80"
+                                    "Value" : "90"
                                 },
                             ]
                         },
@@ -159,7 +159,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "95"
                                 },
                             ]
                         },
@@ -169,7 +169,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AstonMartin3rd}"
+                                    "Value" : "{AstonMartin4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -177,7 +177,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "50"
+                                    "Value" : "65"
                                 },
                             ]
                         },
@@ -187,7 +187,7 @@
                             [
                                 {
                                     "Property" : "Foreground",
-                                    "Value" : "{AlpinePrimary}"
+                                    "Value" : "{Alpine4th}"
                                 },
                                 {
                                     "Property" : "FontName",
@@ -195,7 +195,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "80"
+                                    "Value" : "85"
                                 },
                             ]
                         },
@@ -213,7 +213,7 @@
                                 },
                                 {
                                     "Property" : "FontSize",
-                                    "Value" : "70"
+                                    "Value" : "80"
                                 },
                             ]
                         },
@@ -411,7 +411,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{MercedesPrimary}"
+                                            "Value" : "{Mercedes3rd}"
                                         }
                                     ]
                                 },
@@ -431,7 +431,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{FerrariPrimary}"
+                                            "Value" : "{FerrariSecondary}"
                                         }
                                     ]
                                 },
@@ -441,7 +441,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AlfaRomeoSecondary}"
+                                            "Value" : "{AlfaRomeo3rd}"
                                         }
                                     ]
                                 },
@@ -451,7 +451,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{McLarenPrimary}"
+                                            "Value" : "{McLaren4th}"
                                         }
                                     ]
                                 },
@@ -461,7 +461,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AlphaTauriPrimary}"
+                                            "Value" : "{AlphaTauriSecondary}"
                                         }
                                     ]
                                 },
@@ -481,7 +481,7 @@
                                     [
                                         {
                                             "Property" : "Foreground",
-                                            "Value" : "{AstonMartinSecondary}"
+                                            "Value" : "{AstonMartin3rd}"
                                         }
                                     ]
                                 },
