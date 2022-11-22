@@ -64,6 +64,7 @@
                                     }
                                 ]
                             },
+                            
 
                             //driver stack
                             {
@@ -71,30 +72,234 @@
                                 "Padding" : "0,0,0,16",
                                 "Orientation": "Horizontal",                                                         
                                 "Items": [
+                                    //Car
+                                    {
+                                        "Name": "",
+                                        "BlockType": "dock",
+                                        "Orientation": "Vertical",
+                                        "Spacing": 12,
+                                        "Padding": "0, 0",
+                                        "HorizontalAlignment": "Center",
+                                        "Items": [
+                                            //TrackImage
+                                            
+                                                {
+                                                "BlockType" : "image",
+                                                "Height": 150,
+                                                "VerticalAlignment": "Top",
+                                                "ImageOptions": {
+                                                    "Path": "images/{Item.Team.Name}_car.png"
+                                                }
+                                            }
+                                        ],
+                                    },                                    
                                     //driver 1
                                     {
-                                        "BlockType": "dock",
+                                        "BlockType": "stack",
                                         "PaddingLeft": 24,
                                         "PaddingRight": 12,
+                                        "MarginTop": 50,
                                         "Width": 520,                                        
                                         "Items": [                                            
                                             {
                                                 "BlockType": "stack",
-                                                "HorizontalAlignment": "Left",
+                                                "HorizontalAlignment": "Right",
                                                 "VerticalAlignment": "Center",
                                                 "Items": [
-                                                    //flag
-                                                    {
-                                                        "BlockType": "image",
-                                                        "Height": 48,
+                                                     //number
+                                                     {
+                                                        "BlockType": "text",
+                                                        "MaxWidth": 600,
                                                         "MarginRight": 12,
+                                                        "Source": "{Item.Line0.Driver.RaceNumber}",
+                                                        "HorizontalAlignment": "Left",
                                                         "VerticalAlignment": "Center",
-                                                        "ImageOptions": {
-                                                            "Path": "{Item.Line0.Driver.Nationality.LogoPath}",
-                                                            "VerticalAlignment": "Center"
-                                                        }
+                                                        "FontName": "{FontNameDefault}",
+                                                        "FontSize": 42,
+                                                        "Triggers" : [                         
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Mercedes}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{MercedesSecondary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersMercedes-Bold}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "70"
+                                                                    },
+                                    
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Williams}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Williams4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersWilliams}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Ferrari}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Ferrari4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersFerrari}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "80"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alfa Romeo}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AlfaRomeo4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlfaRomeo}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "75"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{McLarenSecondary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersMcLaren}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=AlphaTauri}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AlphaTauriPrimary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlphaTauri}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "90"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Haas}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Haas3rd}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersHaas}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "95"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Aston Martin}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AstonMartin4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAstonMartin}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "65"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alpine}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Alpine4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlpine-Bold}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Red Bull}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{RedBull3rd}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersRedbull}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "80"
+                                                                    },
+                                                                ]
+                                                            },
+                                                        ]
                                                     },
-
                                                     //name
                                                     {
                                                         "BlockType": "text",
@@ -112,7 +317,7 @@
                                                                 [
                                                                     {
                                                                         "Property" : "Foreground",
-                                                                        "Value" : "{MercedesSecondary}"
+                                                                        "Value" : "{Mercedes3rd}"
                                                                     }
                                                                 ]
                                                             },
@@ -152,7 +357,7 @@
                                                                 [
                                                                     {
                                                                         "Property" : "Foreground",
-                                                                        "Value" : "{McLarenSecondary}"
+                                                                        "Value" : "{McLaren4th}"
                                                                     }
                                                                 ]
                                                             },
@@ -202,13 +407,23 @@
                                                                 [
                                                                     {
                                                                         "Property" : "Foreground",
-                                                                        "Value" : "{RedBull3rd}"
+                                                                        "Value" : "{RedBull4th}"
                                                                     }
                                                                 ]
                                                             }
                                                         ]
                                                     },
-
+                                                    //flag
+                                                    {
+                                                        "BlockType": "image",
+                                                        "Height": 48,
+                                                        "MarginLeft": 12,
+                                                        "VerticalAlignment": "Center",
+                                                        "ImageOptions": {
+                                                            "Path": "{Item.Line0.Driver.Nationality.LogoPath}",
+                                                            "VerticalAlignment": "Center"
+                                                        }
+                                                    },
                                                     //icon badges
                                                     {
                                                         "BlockType": "itemstack",
@@ -241,27 +456,26 @@
                                             }
                                         ]
                                     },
-
                                     //driver 2
                                     {
-                                        "BlockType": "dock",
+                                        "BlockType": "stack",
                                         "Width": 520,
                                         "HorizontalAlignment" : "Right",
                                         "PaddingLeft": 12,
-                                        "PaddingRight": 24,                                       
+                                        "PaddingRight": 24,
+                                        "MarginTop": 50,                                       
                                         "Items": [                                           
                                             {
                                                 "BlockType": "stack",
                                                 "HorizontalAlignment": "Right",
                                                 "VerticalAlignment": "Center",
                                                 "Items": [
-
-                                                    //name
+                                                    //number
                                                     {
                                                         "BlockType": "text",
                                                         "MaxWidth": 600,
-                                                        "MarginLRight": 8,
-                                                        "Source": "{Item.Line1.Driver.Name}",
+                                                        "MarginRight": 12,
+                                                        "Source": "{Item.Line1.Driver.RaceNumber}",
                                                         "HorizontalAlignment": "Left",
                                                         "VerticalAlignment": "Center",
                                                         "FontName": "{FontNameDefault}",
@@ -274,6 +488,200 @@
                                                                     {
                                                                         "Property" : "Foreground",
                                                                         "Value" : "{MercedesSecondary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersMercedes-Bold}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "70"
+                                                                    },
+                                    
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Williams}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Williams4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersWilliams}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Ferrari}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Ferrari4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersFerrari}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "80"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alfa Romeo}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AlfaRomeo4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlfaRomeo}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "75"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=McLaren}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{McLarenSecondary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersMcLaren}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=AlphaTauri}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AlphaTauriPrimary}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlphaTauri}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "90"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Haas}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Haas3rd}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersHaas}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "95"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Aston Martin}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{AstonMartin4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAstonMartin}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "65"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Alpine}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Alpine4th}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersAlpine-Bold}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "85"
+                                                                    },
+                                                                ]
+                                                            },
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Red Bull}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{RedBull3rd}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontName",
+                                                                        "Value" : "{F1NumbersRedbull}"
+                                                                    },
+                                                                    {
+                                                                        "Property" : "FontSize",
+                                                                        "Value" : "80"
+                                                                    },
+                                                                ]
+                                                            },
+                                                        ]
+                                                    },
+                                                    //name
+                                                    {
+                                                        "BlockType": "text",
+                                                        "MaxWidth": 480,
+                                                        "MarginLeft": 8,
+                                                        "Source": "{Item.Line1.Driver.Name}",
+                                                        "HorizontalAlignment": "Left",
+                                                        "VerticalAlignment": "Center",
+                                                        "FontName": "{FontNameDefault}",
+                                                        "FontSize": 42,
+                                                        "Triggers": [
+                                                            {
+                                                                "Condition": "{Item.Team.Name, Converter=StringEquals, Parameter=Mercedes}",
+                                                                "Setters" :
+                                                                [
+                                                                    {
+                                                                        "Property" : "Foreground",
+                                                                        "Value" : "{Mercedes3rd}"
                                                                     }
                                                                 ]
                                                             },
@@ -313,7 +721,7 @@
                                                                 [
                                                                     {
                                                                         "Property" : "Foreground",
-                                                                        "Value" : "{McLarenSecondary}"
+                                                                        "Value" : "{McLaren4th}"
                                                                     }
                                                                 ]
                                                             },
@@ -363,7 +771,7 @@
                                                                 [
                                                                     {
                                                                         "Property" : "Foreground",
-                                                                        "Value" : "{RedBull3rd}"
+                                                                        "Value" : "{RedBull4th}"
                                                                     }
                                                                 ]
                                                             }
