@@ -420,6 +420,16 @@
                                                                     }
                                                                 ]
                                                             },
+                                                            {
+                                                                "BlockType" : "image",
+                                                                "Height" : 25,
+                                                                "MarginLeft" : 12,
+                                                                "VerticalAlignment": "Center",
+                                                                "MarginTop" : 0,
+                                                                "ImageOptions": {
+                                                                    "Path" : "images/logo_{Item.Line0.Driver.GamePlatform}"
+                                                                }
+                                                            },
                                                             //flag
                                                             {
                                                                 "BlockType": "image",
@@ -778,6 +788,16 @@
                                                                         ]
                                                                     }
                                                                 ]
+                                                            },
+                                                            {
+                                                                "BlockType" : "image",
+                                                                "Height" : 25,
+                                                                "MarginLeft" : 12,
+                                                                "VerticalAlignment": "Center",
+                                                                "MarginTop" : 0,
+                                                                "ImageOptions": {
+                                                                    "Path" : "images/logo_{Item.Line1.Driver.GamePlatform}"
+                                                                }
                                                             },
                                                             //flag
                                                             {
